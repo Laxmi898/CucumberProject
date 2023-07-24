@@ -21,7 +21,7 @@ public class AllSauceDemo {
 	
 	}
 
-	@Given("I will enter username and password")
+	@And("I will enter username and password")
 	public void i_will_enter_username_and_password() throws InterruptedException {
 	    // Write code here that turns the phrase above into concrete actions
 	    //throw new io.cucumber.java.PendingException();
