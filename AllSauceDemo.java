@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -32,7 +33,7 @@ public class AllSauceDemo {
 	Thread.sleep(2000);
 	}
 
-	@Given("CLick on Login Button")
+	@And("CLick on Login Button")
 	public void c_lick_on_login_button() throws InterruptedException {
 	    // Write code here that turns the phrase above into concrete actions
 	    //throw new io.cucumber.java.PendingException();
@@ -49,7 +50,7 @@ public class AllSauceDemo {
 		d.findElement(By.id("add-to-cart-sauce-labs-backpack")).click();
 	}
 
-	@When("Click on Basket")
+	@And("Click on Basket")
 	public void click_on_basket() throws InterruptedException {
 	    // Write code here that turns the phrase above into concrete actions
 	    //throw new io.cucumber.java.PendingException();
@@ -59,7 +60,7 @@ public class AllSauceDemo {
 	Thread.sleep(2000);
 	}
 
-	@When("Click on Checkout")
+	@And("Click on Checkout")
 	public void click_on_checkout() {
 	    // Write code here that turns the phrase above into concrete actions
 	   // throw new io.cucumber.java.PendingException();
@@ -68,7 +69,7 @@ public class AllSauceDemo {
 		
 	}
 
-	@When("Enter first name,lastname and zipcode")
+	@And("Enter first name,lastname and zipcode")
 	public void enter_first_name_lastname_and_zipcode() throws InterruptedException {
 	    // Write code here that turns the phrase above into concrete actions
 	    //throw new io.cucumber.java.PendingException();
@@ -82,14 +83,14 @@ public class AllSauceDemo {
 		Thread.sleep(2000);
 	}
 
-	@When("click on continue")
+	@And("click on continue")
 	public void click_on_continue() {
 	    // Write code here that turns the phrase above into concrete actions
 	    //throw new io.cucumber.java.PendingException();
 		d.findElement(By.id("continue")).click();
 	}
 
-	@When("CLick on finish")
+	@And("CLick on finish")
 	public void c_lick_on_finish() throws InterruptedException {
 		Thread.sleep(2000);
 	    // Write code here that turns the phrase above into concrete actions
@@ -105,7 +106,7 @@ public class AllSauceDemo {
 		Thread.sleep(2000);
 	}
 
-	@Then("I Will be in Home page of saucedemo website")
+	@And("I Will be in Home page of saucedemo website")
 	public void i_will_be_in_home_page_of_saucedemo_website() {
 	    // Write code here that turns the phrase above into concrete actions
 	    //throw new io.cucumber.java.PendingException();
